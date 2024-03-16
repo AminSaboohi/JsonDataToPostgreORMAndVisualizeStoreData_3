@@ -3,6 +3,7 @@ from database_manager import DatabaseManager
 import peewee
 import logging
 import local_settings
+import argparse
 
 FILE_ADDRESS = "sample.json"
 
@@ -64,10 +65,27 @@ def log_decorator(func):
     return wrapper
 
 
-def main():
+def arg_input_parser() -> int:
+    parser = argparse.ArgumentParser(
+        description="Sales data visualisation"
+    )
+    parser.add_argument("-r",
+                        "--report",
+                        help="Report",
+                        action='store_true',
+                        )
+    args = parser.parse_args()
+    flag_value = args.report
+    return flag_value
 
+
+def main():
     database_manager.drop_tables(models=[SaleInfo, Item])
     database_manager.create_tables(models=[SaleInfo, Item])
+    if arg_input_parser():
+        print('report')
+    else:
+        logging.info("No arguments entered")
 
 
 if __name__ == "__main__":
