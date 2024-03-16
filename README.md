@@ -8,7 +8,8 @@ This project is designed to manage and analyze sales data for a retail store. It
 - Sales Reports: Generates visual sales report charts for the most sold items when the application is run with the -r or --report command-line argument.
 ## Getting Started
 
-### Prerequisites - Python 3.6 or newer. - PostgreSQL database.
+### Prerequisites
+- Python 3.6 or newer. - PostgreSQL database.
 
 ### Installation
 
