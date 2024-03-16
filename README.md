@@ -35,7 +35,8 @@ pip install -r requirements.txt
 2. Copy sample_setting.py to local_setting.py.
 3. Edit local_setting.py following the provided guidelines to configure your database connection.
 
-### Running the Application To run the application and generate sales report charts, use: 
+### Running the Application
+To run the application and generate sales report charts, use: 
 
 ```
 python main.py -r
