@@ -25,7 +25,7 @@ git clone https://github.com/AminSaboohi/JsonDataToPostgreORMAndVisualizeStoreDa
 cd https://github.com/AminSaboohi/JsonDataToPostgreORMAndVisualizeStoreData_3/tree/main
 ``` 
 
-3. Make a virtual machine and actvate that: 
+3. Make a virtual machine and activate that: 
 
 ```
 py -m venv venv
