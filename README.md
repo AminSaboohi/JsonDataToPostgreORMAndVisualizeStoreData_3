@@ -16,16 +16,23 @@ This project is designed to manage and analyze sales data for a retail store. It
 1. Clone the project repository: 
 
 ```
-git clone 
+git clone https://github.com/AminSaboohi/JsonDataToPostgreORMAndVisualizeStoreData_3.git
 ```
 
 2. Change to the project directory: 
 
 ```
-cd
+cd https://github.com/AminSaboohi/JsonDataToPostgreORMAndVisualizeStoreData_3/tree/main
 ``` 
 
-3. Install the required dependencies: 
+3. Make a virtual machine and actvate that: 
+
+```
+py -m venv venv
+venv\Scripts\activate
+```
+
+4. Install the required dependencies: 
 
 ```
 pip install -r requirements.txt
